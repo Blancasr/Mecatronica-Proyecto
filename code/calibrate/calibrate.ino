@@ -19,7 +19,8 @@ bool wait4;
 bool wait5;
 
 int min_ang = 0;
-int max_ang = 100;
+int to_calibrate = 90;
+int max_ang = 135;
 int retardo = 15;
 
 int pin1 = 11;
@@ -39,12 +40,12 @@ void setup() {
   servo4.attach(pin4);
   servo5.attach(pin5);
   
-  val1 = 0;
-  val2 = 0;
-  val3 = 0;
-  val4 = 0;
-  val5 = 0;
-  
+  val1 = to_calibrate;
+  val2 = to_calibrate;
+  val3 = to_calibrate;
+  val4 = to_calibrate;
+  val5 = to_calibrate;
+
   wait1 = false;
   wait2 = true;
   wait3 = true;
