@@ -18,8 +18,8 @@ bool wait3;
 bool wait4;
 bool wait5;
 
-int min_ang = 0;
-int to_calibrate = 90;
+int min_ang = 68;
+int to_calibrate = 100;
 int max_ang = 135;
 int retardo = 15;
 
@@ -46,12 +46,6 @@ void setup() {
   val4 = to_calibrate;
   val5 = to_calibrate;
 
-  wait1 = false;
-  wait2 = true;
-  wait3 = true;
-  wait4 = true;
-  wait5 = true;
-
   servo1.write(val1);
   servo2.write(val2);
   servo3.write(val3);
@@ -61,5 +55,18 @@ void setup() {
 }
 void loop() {
   // put your main code here, to run repeatedly:
+
+ /*
+  servo1.write(val1);
+  val1 = val1 +1;
+
+  if(val1 > max_ang){
+    val1 = to_calibrate;
+  }
+  delay(15);
+  */
+  
+  Serial.println(servo1.read());
+  
 
 }
