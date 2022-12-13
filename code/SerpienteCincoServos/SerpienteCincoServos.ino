@@ -202,6 +202,6 @@ void loop() {
   servo4.write(val4);
   servo5.write(val5);
   
-  delay(15);
+  delay(25);
 
 }

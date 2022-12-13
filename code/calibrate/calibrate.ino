@@ -19,7 +19,7 @@ bool wait4;
 bool wait5;
 
 int min_ang = 68;
-int to_calibrate = 100;
+int to_calibrate = 90;
 int max_ang = 135;
 int retardo = 15;
 
